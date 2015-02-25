@@ -1,0 +1,70 @@
+; Packaging information for druparcheky
+name = "Drupal Carcheky Profile"
+description = "Perfil de instalación para Carcheky"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencias
+; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_views
+dependencies[] = adminimal_admin_menu
+dependencies[] = coffee
+dependencies[] = filter_perms
+dependencies[] = module_filter
+; Chaos tool suite
+dependencies[] = ctools
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = filter
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = options
+dependencies[] = path
+dependencies[] = system
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+; Media
+dependencies[] = imce
+; Multilingual
+dependencies[] = l10n_update
+dependencies[] = l10n_client
+; Other
+dependencies[] = backup_migrate
+dependencies[] = better_formats
+dependencies[] = environment_indicator
+dependencies[] = libraries
+dependencies[] = masquerade
+dependencies[] = pathauto
+dependencies[] = token
+dependencies[] = transliteration
+; User interface
+dependencies[] = ckeditor
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = views_bulk_operations
+; Help
+dependencies[] = advanced_help
+
+
+files[] = druparcheky.profile
+
+; ----------
+; Variables
+; ----------
+
+variables[admin_theme] = 'adminimal'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = '[node:title]'
+variables[pathauto_user_pattern] = 'usuarios/[user:name]'
+
