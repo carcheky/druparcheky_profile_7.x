@@ -1,6 +1,6 @@
-; Packaging information for druparcheky
-name = "Drupal Carcheky Profile"
-description = "Perfil de instalación para Carcheky"
+; Packaging information for jfmaguire
+name = "JF Maguire"
+description = "Perfil de instalación para JF Maguire"
 exclusive = "1"
 core = "7.x"
 ; ----------
@@ -57,14 +57,6 @@ dependencies[] = views_bulk_operations
 dependencies[] = advanced_help
 
 
-files[] = druparcheky.profile
+files[] = jfmaguire.profile
 
-; ----------
-; Variables
-; ----------
-
-variables[admin_theme] = 'adminimal'
-variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
-variables[pathauto_node_pattern] = '[node:title]'
-variables[pathauto_user_pattern] = 'usuarios/[user:name]'
 

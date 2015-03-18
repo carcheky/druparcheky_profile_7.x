@@ -1,4 +1,4 @@
-; druparcheky make file for d.o. usage
+; jfmaguire make file for d.o. usage
 core = "7.x"
 api = "2"
 
@@ -18,8 +18,8 @@ projects[module_filter][subdir] = ""
 projects[ctools][subdir] = ""
 projects[image_resize_filter][subdir] = ""
 projects[imce][subdir] = ""
-projects[l10n_update][subdir] = ""
-projects[l10n_client][subdir] = ""
+projects[l10n_update] = 1.1
+projects[l10n_client] = 1.3
 projects[backup_migrate][subdir] = ""
 projects[better_formats][subdir] = ""
 projects[entity][subdir] = ""
@@ -55,5 +55,5 @@ libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
 libraries[ckeditor][destination] = "libraries"
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_standard.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_full.zip"
 
