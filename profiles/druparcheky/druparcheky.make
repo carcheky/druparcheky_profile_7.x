@@ -4,7 +4,7 @@ api = "2"
 
 ; +++++ Core +++++
 
-projects[drupal][version] = "7.34"
+projects[drupal][version] = "7.35"
 
 
 ; +++++ Modules +++++
