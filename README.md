@@ -6,7 +6,7 @@ Este perfil está desarrollado pensando en la optimización del tiempo a la hora
 
 ### VERSIÓN DE DRUPAL ###
 
-* Drupal 7.36
+* Drupal 7.37
 
 
 ### MÓDULOS ###

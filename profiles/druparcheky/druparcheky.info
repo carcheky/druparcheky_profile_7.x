@@ -1,6 +1,6 @@
 ; Packaging information for jfmaguire
-name = "JF Maguire"
-description = "Perfil de instalación para JF Maguire"
+name = "Carcheky"
+description = "Perfil de instalación para desarrollo"
 exclusive = "1"
 core = "7.x"
 ; ----------
