@@ -62,4 +62,4 @@ Este perfil está desarrollado pensando en la optimización del tiempo a la hora
 
 ### POST INSTALACIÓN ###
 
-* Ir a http://test.dev/admin/config/media/file-system y guardar cambios, quizás sea necesario corregir permisos para poder guardar.
+* Ir a /admin/config/media/file-system y guardar cambios, quizás sea necesario corregir permisos para poder guardar.
