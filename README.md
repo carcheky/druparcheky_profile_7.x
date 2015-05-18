@@ -59,3 +59,7 @@ Este perfil está desarrollado pensando en la optimización del tiempo a la hora
 * Desde el directorio raiz del proyecto, ejecutar: dr make profiles/druparcheky/druparcheky.make (o ejecutar desde el directorio raiz download-druparcheky.sh)
 * Proceder con la instalación
 * Borrar el archivo download-druparcheky.sh
+
+### POST INSTALACIÓN ###
+
+* Ir a http://test.dev/admin/config/media/file-system y guardar cambios, quizás sea necesario corregir permisos para poder guardar.
