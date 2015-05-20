@@ -47,6 +47,10 @@ projects[adminimal_theme][version]
 projects[zen][type] = "theme"
 projects[zen][version]
 
+; adaptivetheme
+projects[adaptivetheme][type] = "theme"
+projects[adaptivetheme][version]
+
 
 ; +++++ Libraries +++++
 
