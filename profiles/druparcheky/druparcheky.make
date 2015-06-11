@@ -34,6 +34,7 @@ projects[variable][subdir] = ""
 projects[views][subdir] = ""
 projects[views_bulk_operations][subdir] = ""
 projects[advanced_help][subdir] = ""
+projects[field_permissions][subdir] = ""
 
 
 
