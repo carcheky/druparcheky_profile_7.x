@@ -55,6 +55,7 @@ dependencies[] = views_ui
 dependencies[] = views_bulk_operations
 ; Help
 dependencies[] = advanced_help
+dependencies[] = field_permissions
 
 
 files[] = jfmaguire.profile
