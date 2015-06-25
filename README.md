@@ -4,12 +4,12 @@
 
 Este perfil está desarrollado pensando en la optimización del tiempo a la hora de emprender un nuevo proyecto en druparcheky.
 
-### Core ### 
+### Core 
 
 * drupal
 
 
-### Modules ### 
+### Modules 
 
 * views_bulk_operations
 * admin_menu
@@ -37,23 +37,19 @@ Este perfil está desarrollado pensando en la optimización del tiempo a la hora
 * views
 
 
-### Themes ### 
+### Themes 
 
 * adaptivetheme
 * adminimal_theme
 * zen
 
 
-### Libraries ### 
+### Libraries 
 
-; CKEditor
-libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_full.zip"
-libraries[ckeditor][directory_name] = "ckeditor"
-libraries[ckeditor][type] = "library"
+* CKEditor (v4.4.7_full) http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_full.zip
 
 
-### CÓMO INSTALAR ###
+### CÓMO INSTALAR
 
 * Crear la carpeta contenedora del proyecto.
 * Extraer el contenido del paquete para que pueda encontrarse el archivo make en la siguiente ruta: "profiles/druparcheky/druparcheky.make"
