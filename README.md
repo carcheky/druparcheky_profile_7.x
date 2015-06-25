@@ -26,8 +26,8 @@ Este perfil está desarrollado pensando en la optimización del tiempo a la hora
 * field_permissions
 * filter_perms
 * imce
-* projects[l10n_update] = 1.1
-* projects[l10n_client] = 1.3
+* l10n_update (v1.1) [se recomienda actualizar tras la instalación]
+* l10n_client] (v1.3) [se recomienda actualizar tras la instalación]
 * libraries
 * masquerade
 * module_filter
