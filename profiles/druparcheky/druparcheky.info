@@ -47,6 +47,8 @@ dependencies[] = masquerade
 dependencies[] = pathauto
 dependencies[] = token
 dependencies[] = transliteration
+; User
+dependencies[] = email_registration
 ; User interface
 dependencies[] = ckeditor
 ; Views
