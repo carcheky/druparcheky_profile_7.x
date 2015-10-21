@@ -39,7 +39,6 @@ projects[] = "views"
 
 projects[] = "adaptivetheme"
 projects[] = "adminimal_theme"
-projects[] = "zen"
 
 
 ; +++++ Libraries +++++
