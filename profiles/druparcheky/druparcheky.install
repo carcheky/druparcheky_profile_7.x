@@ -121,5 +121,7 @@ function druparcheky_install() {
     ->execute();
   variable_set('admin_theme', 'adminimal');
   variable_set('node_admin_theme', '1');
+  variable_set('pathauto_transliterate', '1');
+  variable_set('pathauto_reduce_ascii', '1');
 }
 
