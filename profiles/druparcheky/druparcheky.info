@@ -47,7 +47,7 @@ dependencies[] = pathauto
 dependencies[] = token
 dependencies[] = transliteration
 ; User
-dependencies[] = email_registration
+dependencies[] = logintoboggan
 ; User interface
 dependencies[] = ckeditor
 ; Views
