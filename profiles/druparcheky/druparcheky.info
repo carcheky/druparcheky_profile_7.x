@@ -46,6 +46,8 @@ dependencies[] = masquerade
 dependencies[] = pathauto
 dependencies[] = token
 dependencies[] = transliteration
+dependencies[] = taxonomy
+dependencies[] = disable_term_node_listings
 ; User
 dependencies[] = logintoboggan
 ; User interface
