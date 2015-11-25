@@ -110,7 +110,7 @@ function druparcheky_install() {
 
   variable_set('pathauto_node_pattern','[node:title]');
   variable_set('pathauto_user_pattern','usuarios/[user:name]');
-  variable_set('file_private_path','../private');
+  variable_set('file_private_path','private');
   variable_set('file_temporary_path','/tmp');
 
   // Enable the admin theme.
