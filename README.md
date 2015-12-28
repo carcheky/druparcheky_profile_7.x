@@ -46,7 +46,7 @@ Este perfil está desarrollado pensando en la optimización del tiempo a la hora
 
 ### Libraries 
 
-* CKEditor (v4.4.7_full) http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_full.zip
+* CKEditor (v4.4.7_full) http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.6/ckeditor_4.5.6_full.zip
 
 
 ### CÓMO INSTALAR
