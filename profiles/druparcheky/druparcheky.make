@@ -1,4 +1,4 @@
-; jfmaguire make file for d.o. usage
+; druparcheky make file for d.o. usage
 core = "7.x"
 api = "2"
 
@@ -45,6 +45,6 @@ projects[] = "adminimal_theme"
 
 ; CKEditor
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.5/ckeditor_4.5.5_full.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.5/ckeditor_4.5.6_full.zip"
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
