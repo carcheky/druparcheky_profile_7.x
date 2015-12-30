@@ -4,49 +4,9 @@
 
 Este perfil está desarrollado pensando en la optimización del tiempo a la hora de emprender un nuevo proyecto en druparcheky.
 
-### Core 
 
-* drupal
-
-
-### Modules 
-
-* views_bulk_operations
-* admin_menu
-* admin_views
-* adminimal_admin_menu
-* advanced_help
-* backup_migrate
-* better_formats
-* ctools
-* ckeditor
-* coffee
-* entity
-* environment_indicator
-* field_permissions
-* filter_perms
-* imce
-* l10n_update (v1.1) [se recomienda actualizar tras la instalación]
-* l10n_client] (v1.3) [se recomienda actualizar tras la instalación]
-* libraries
-* masquerade
-* module_filter
-* pathauto
-* token
-* transliteration
-* views
-
-
-### Themes 
-
-* adaptivetheme
-* adminimal_theme
-* zen
-
-
-### Libraries 
-
-* CKEditor (v4.5.6_full) http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.6/ckeditor_4.5.6_full.zip
+##CONTENIDO DEL PERFIL
+https://raw.githubusercontent.com/carcheky/druparcheky/master/profiles/druparcheky/druparcheky.make
 
 
 ### CÓMO INSTALAR
