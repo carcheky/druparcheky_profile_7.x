@@ -4,11 +4,29 @@
 		{
 			"file_exclude_patterns":
 			[
-				"*//.*"
+				"*//.*",
+				"*.css.map",
+				"*//COPYRIGHT.txt",
+				"*//CHANGELOG.txt",
+				"*//INSTALL.mysql.txt",
+				"*//Drupal.sublime-projectcompletions",
+				"*//INSTALL.pgsql.txt",
+				"*//INSTALL.sqlite.txt",
+				"*//INSTALL.txt",
+				"*//LICENSE.txt",
+				"*//MAINTAINERS.txt",
+				"*//README.txt",
+				"*//UPGRADE.txt"
 			],
 			"folder_exclude_patterns":
 			[
-				"*//modules", "*//scripts", "*//profiles", "*//misc", "*//includes", "*//themes"
+				"*//modules",
+				"*//scripts",
+				"*//profiles",
+				"*//misc",
+				"*//includes",
+				"*//themes",
+				".sass-cache"
 			],
 			"path": "/"
 		}
