@@ -21,3 +21,4 @@ https://raw.githubusercontent.com/carcheky/druparcheky/master/profiles/druparche
 ### POST INSTALACIÓN ###
 
 * Ir a /admin/config/media/file-system y guardar cambios, quizás sea necesario corregir permisos para poder guardar.
+ asdf
