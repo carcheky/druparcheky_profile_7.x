@@ -1,7 +1,6 @@
 ; Packaging information for jfmaguire
-name = "Carcheky"
+name = "Druparcheky"
 description = "Perfil de instalación para desarrollo"
-exclusive = "1"
 core = "7.x"
 ; ----------
 ; Dependencias
