@@ -22,7 +22,6 @@
 			[
 				"*//modules",
 				"*//scripts",
-				"*//profiles",
 				"*//misc",
 				"*//includes",
 				"*//themes",
