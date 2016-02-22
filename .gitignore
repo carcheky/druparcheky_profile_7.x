@@ -1,0 +1,29 @@
+# Ignore default text files
+robots.txt
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/INSTALL*.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/UPGRADE.txt
+/README.txt
+/sites
+
+# Ignore everything but the "sites" folder ( for non core developer )
+.htaccess
+web.config
+authorize.php
+cron.php
+index.php
+install.php
+update.php
+xmlrpc.php
+/includes
+/misc
+/modules
+/profiles/minimal
+/profiles/standard
+/profiles/testing
+/profiles/README.txt
+/scripts
+/themes
