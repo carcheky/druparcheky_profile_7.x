@@ -1,4 +1,4 @@
-; Packaging information for jfmaguire
+; Packaging information for druparcarcheky
 name = "Druparcheky"
 description = "Perfil de instalación para desarrollo"
 core = "7.x"
@@ -60,6 +60,6 @@ dependencies[] = advanced_help
 dependencies[] = field_permissions
 
 
-files[] = jfmaguire.profile
+files[] = druparcheky.profile
 
 
