@@ -2,6 +2,7 @@
 name = "Druparcheky"
 description = "Perfil de instalación para desarrollo"
 core = "7.x"
+version = 2.1
 ; ----------
 ; Dependencias
 ; ----------
