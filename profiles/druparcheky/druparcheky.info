@@ -1,8 +1,8 @@
 ; Packaging information for druparcheky
 name = "Druparcheky"
-description = "Perfil de instalación para desarrollo"
+description = "Perfil de instalacion para desarrollo"
 core = "7.x"
-version = 2.1
+version = 2.1.1
 ; ----------
 ; Dependencias
 ; ----------
