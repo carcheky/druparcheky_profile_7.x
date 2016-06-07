@@ -40,6 +40,7 @@ dependencies[] = l10n_update
 ; Other
 dependencies[] = backup_migrate
 dependencies[] = better_formats
+dependencies[] = devel
 dependencies[] = environment_indicator
 dependencies[] = libraries
 dependencies[] = masquerade
