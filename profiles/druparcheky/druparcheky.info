@@ -20,6 +20,7 @@ dependencies[] = block
 dependencies[] = contextual
 dependencies[] = dblog
 dependencies[] = field
+dependencies[] = field_group
 dependencies[] = field_sql_storage
 dependencies[] = field_ui
 dependencies[] = filter
