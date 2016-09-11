@@ -259,7 +259,7 @@ function druparcheky_install() {
 
 // save private directory
 $form_state = array();
-$form_state['values']['file_private_path'] = '../drupal_private/[site:name]';
+$form_state['values']['file_private_path'] = '../drupal_private/';
 drupal_form_submit('system_file_system_settings', $form_state);
 }
 
