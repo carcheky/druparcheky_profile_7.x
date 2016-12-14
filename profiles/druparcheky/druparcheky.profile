@@ -15,7 +15,7 @@ function druparcheky_form_install_configure_form_alter(&$form, $form_state) {
   $form['site_information']['site_mail']['#default_value'] = "test@test.test";
   $form['admin_account']['account']['name']['#default_value'] = "admin";
   $form['admin_account']['account']['mail']['#default_value'] = "admin@admin.admin";
-  $form['server_settings']['site_default_country']['#default_value'] = "ES";
+  #$form['server_settings']['site_default_country']['#default_value'] = "ES";
 
 
 
