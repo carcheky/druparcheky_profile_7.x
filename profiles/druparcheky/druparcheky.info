@@ -66,7 +66,6 @@ dependencies[] = fast_404
 dependencies[] = imageapi_optimize
 dependencies[] = imce_filefield
 dependencies[] = picture
-dependencies[] = views_litepager
 
 
 files[] = druparcheky.profile
