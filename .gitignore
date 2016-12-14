@@ -29,3 +29,6 @@ themes
 update.php
 web.config
 xmlrpc.php
+.editorconfig
+.htaccess.backup
+robots.txt.backup
