@@ -61,6 +61,12 @@ dependencies[] = views_bulk_operations
 ; Help
 dependencies[] = advanced_help
 dependencies[] = field_permissions
+; Performance
+dependencies[] = fast_404
+dependencies[] = imageapi_optimize
+dependencies[] = imce_filefield
+dependencies[] = picture
+dependencies[] = views_litepager
 
 
 files[] = druparcheky.profile
