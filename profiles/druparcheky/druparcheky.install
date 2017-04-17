@@ -256,6 +256,7 @@ function druparcheky_install() {
   variable_set('pathauto_user_pattern', '[user:name]');
   variable_set('pathauto_transliterate', '1');
   variable_set('pathauto_reduce_ascii', '1');
+  // variable_set('devel_page_alter', '1');
 
 // save private directory
 $form_state = array();
