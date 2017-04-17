@@ -36,6 +36,8 @@ dependencies[] = update
 dependencies[] = user
 ; Media
 dependencies[] = imce
+dependencies[] = imce_filefield
+dependencies[] = imce_mkdir
 ; Multilingual
 dependencies[] = l10n_update
 ; Other
@@ -64,7 +66,6 @@ dependencies[] = field_permissions
 ; Performance
 dependencies[] = fast_404
 dependencies[] = imageapi_optimize
-dependencies[] = imce_filefield
 dependencies[] = breakpoints
 dependencies[] = picture
 
