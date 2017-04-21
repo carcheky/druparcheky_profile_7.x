@@ -11,7 +11,7 @@ dependencies[] = admin_menu
 dependencies[] = admin_views
 dependencies[] = adminimal_admin_menu
 dependencies[] = coffee
-dependencies[] = filter_perms
+dependencies[] = fpa
 dependencies[] = module_filter
 ; Chaos tool suite
 dependencies[] = ctools
