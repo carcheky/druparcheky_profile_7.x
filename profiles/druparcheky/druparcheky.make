@@ -43,6 +43,7 @@ projects[] = "transliteration"
 projects[] = "views"
 projects[] = "views_bulk_operations"
 projects[] = "views_litepager"
+projects[] = "db_maintenance"
 
 ; +++++ Themes +++++
 
