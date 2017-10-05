@@ -94,7 +94,14 @@ if [[ -f "sites/default/settings.php" ]]; then
 
   sleep 1
   echo "===============> Ejecutando 2:: Set apache user ${AUSER}:${AGROUP}"
-    chown -R ${AUSER}:${AGROUP} ./sites/default/files
+    if [[ -d "./sites/default/files" ]]; then
+      echo "=========================> Detectada la carpeta FILES"
+      chown -R ${AUSER}:${AGROUP} ./sites/default/files
+    fi
+    if [[ -d "./sites/default/archivos" ]]; then
+      echo "=========================> Detectada la carpeta ARCHIVOS"
+      chown -R ${AUSER}:${AGROUP} ./sites/default/archivos
+    fi
     chown -R ${AUSER}:${AGROUP} ../private_php
 
   sleep 1
