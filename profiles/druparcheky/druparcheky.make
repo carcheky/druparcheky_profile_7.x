@@ -48,6 +48,7 @@ projects[] = "views_litepager"
 
 projects[] = "adaptivetheme"
 projects[] = "radix"
+projects[] = "zen"
 projects[] = "adminimal_theme"
 
 
