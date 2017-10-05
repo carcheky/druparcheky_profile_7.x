@@ -66,8 +66,7 @@ dependencies[] = field_permissions
 ; Performance
 dependencies[] = fast_404
 dependencies[] = imageapi_optimize
-dependencies[] = breakpoints
-dependencies[] = picture
+
 
 files[] = druparcheky.profile
 
