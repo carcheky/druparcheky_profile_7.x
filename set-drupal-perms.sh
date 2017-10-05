@@ -9,19 +9,19 @@
 #
 # VARIABLES OBLIGATORIAS
 pwd=$(pwd)
-LOCAL_DRUPAL_DIR='/Applications/MAMP/htdocs/druparcheky'
-REMOTE_DRUPAL_DIR='/var/www/vhosts/druparcheky/subdomains/druparcheky/druparcheky'
-REMOTE_DRUPAL_PRIVATEDIR='/var/www/vhosts/druparcheky/subdomains/druparcheky/private_php'
+REMOTE_DRUPAL_DIR_PROD='changethis'
+REMOTE_USER_PROD='changethis'
+REMOTE_GROUP_PROD='changethis'
+REMOTE_APACHE_USER_PROD='changethis'
+REMOTE_APACHE_GROUP_PROD='changethis'
 
-LOCAL_USER='changethis'
-LOCAL_GROUP='changethis'
-LOCAL_APACHE_USER='changethis'
-LOCAL_APACHE_GROUP='changethis'
+REMOTE_DRUPAL_DIR_STAGE='changethis'
+REMOTE_USER_STAGE='changethis'
+REMOTE_GROUP_STAGE='changethis'
+REMOTE_APACHE_USER_STAGE='changethis'
+REMOTE_APACHE_GROUP_STAGE='changethis'
 
-REMOTE_USER='changethis'
-REMOTE_GROUP='changethis'
-REMOTE_APACHE_USER='changethis'
-REMOTE_APACHE_GROUP='changethis'
+
 
 #  ______________________________________________________________________________________________________
 # /_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/
@@ -39,24 +39,24 @@ if [[ -f "sites/default/settings.php" ]]; then
 
   echo '===> Se ha encontrado una instalación drupal'
   echo ''
-  if [[ ${pwd} = ${LOCAL_DRUPAL_DIR} ]]; then
+  if [[ ${pwd} = ${REMOTE_DRUPAL_DIR_PROD} ]]; then
 
-    echo "======> ENTORNO LOCAL ${pwd} <======"
+    echo "======> ENTORNO REMOTO PROD ${pwd} <======"
     echo ''
-    USER=${LOCAL_USER}
-    GROUP=${LOCAL_GROUP}
-    AUSER=${LOCAL_APACHE_USER}
-    AGROUP=${LOCAL_APACHE_GROUP}
-    DRUPAL_DIR=${LOCAL_DRUPAL_DIR}
-  elif [[ ${pwd} = ${REMOTE_DRUPAL_DIR} ]]; then
+    USER=${REMOTE_USER_PROD}
+    GROUP=${REMOTE_GROUP_PROD}
+    AUSER=${REMOTE_APACHE_USER_PROD}
+    AGROUP=${REMOTE_APACHE_GROUP_PROD}
+    DRUPAL_DIR=${REMOTE_DRUPAL_DIR_PROD}
+  elif [[ ${pwd} = ${REMOTE_DRUPAL_DIR_STAGE} ]]; then
 
-    echo "======> ENTORNO REMOTO ${pwd} <======"
+    echo "======> ENTORNO REMOTO STAGE ${pwd} <======"
     echo ''
-    USER=${REMOTE_USER}
-    GROUP=${REMOTE_GROUP}
-    AUSER=${REMOTE_APACHE_USER}
-    AGROUP=${REMOTE_APACHE_GROUP}
-    DRUPAL_DIR=${REMOTE_DRUPAL_DIR}
+    USER=${REMOTE_USER_STAGE}
+    GROUP=${REMOTE_GROUP_STAGE}
+    AUSER=${REMOTE_APACHE_USER_STAGE}
+    AGROUP=${REMOTE_APACHE_GROUP_STAGE}
+    DRUPAL_DIR=${REMOTE_DRUPAL_DIR_STAGE}
   else
     echo ''
     echo "======> la ruta está mal, ahora mismo estás en"
