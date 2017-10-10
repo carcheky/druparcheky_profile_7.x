@@ -59,7 +59,6 @@ dependencies[] = ckeditor
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = views_bulk_operations
-dependencies[] = views_litepager
 dependencies[] = admin_views
 ; Help
 dependencies[] = advanced_help
