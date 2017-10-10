@@ -44,6 +44,7 @@ projects[] = "views"
 projects[] = "views_bulk_operations"
 projects[] = "views_litepager"
 projects[] = "db_maintenance"
+projects[] = "unused_modules"
 
 ; +++++ Themes +++++
 
