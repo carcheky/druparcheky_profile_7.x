@@ -67,6 +67,7 @@ dependencies[] = field_permissions
 dependencies[] = fast_404
 dependencies[] = imageapi_optimize
 dependencies[] = db_maintenance
+dependencies[] = unused_modules
 
 files[] = druparcheky.profile
 
