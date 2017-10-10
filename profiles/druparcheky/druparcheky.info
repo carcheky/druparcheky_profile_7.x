@@ -8,7 +8,6 @@ version = 2.1.1
 ; ----------
 ; Administration
 dependencies[] = admin_menu
-dependencies[] = admin_views
 dependencies[] = adminimal_admin_menu
 dependencies[] = coffee
 dependencies[] = fpa
@@ -60,6 +59,8 @@ dependencies[] = ckeditor
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = views_bulk_operations
+dependencies[] = views_litepager
+dependencies[] = admin_views
 ; Help
 dependencies[] = advanced_help
 dependencies[] = field_permissions
