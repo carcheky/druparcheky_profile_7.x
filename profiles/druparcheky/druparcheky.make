@@ -42,7 +42,7 @@ projects[] = "views"
 projects[] = "views_bulk_operations"
 projects[] = "db_maintenance"
 projects[] = "unused_modules"
-
+projects[] = "total_control"
 projects[] = "cs_adaptive_image"
 projects[] = "ais"
 projects[] = "adaptive_image"
