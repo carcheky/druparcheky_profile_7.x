@@ -12,7 +12,15 @@
  * @see system_install()
  */
 function druparcheky_install() {
+  drupal_set_message(t('###########################################################################'), 'status');
+  drupal_set_message(t('======>'), 'status');
+  drupal_set_message(t('======> STARTING DRUPARCHEKY HACKS!!!'), 'status');
+  drupal_set_message(t('======>'), 'status');
+  drupal_set_message(t('======>'), 'status');
+  drupal_set_message(t('======>'), 'status');
+
   // Add text formats.
+  drupal_set_message(t('======> Add text formats.'), 'status');
   $filtered_html_format = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
@@ -69,6 +77,7 @@ function druparcheky_install() {
   filter_format_save($full_html_format);
 
   // Enable some druparcheky blocks.
+  drupal_set_message(t('======> Enable some druparcheky blocks.'), 'status');
   $default_theme = variable_get('theme_default', 'bartik');
   $admin_theme = 'adminimal';
   $blocks = array(
@@ -162,6 +171,7 @@ function druparcheky_install() {
   // Insert default pre-defined node types into the database. For a complete
   // list of available node type attributes, refer to the node type API
   // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
+  drupal_set_message(t('======> Insert default pre-defined node types into the database.'), 'status');
   $types = array(
     array(
       'type' => 'page',
@@ -195,41 +205,50 @@ function druparcheky_install() {
   // }
 
   // Default "Basic page" to not be promoted
+  drupal_set_message(t('======> Default "Basic page" to not be promoted.'), 'status');
   variable_set('node_options_page', array('status'));
 
   // Don't display date and author information for "Basic page" nodes by default.
+  drupal_set_message(t('======> Don\'t display date and author information for "Basic page" nodes by default.'), 'status');
   variable_set('node_submitted_page', FALSE);
 
   // Enable user picture support and set the default to a square thumbnail option.
+  drupal_set_message(t('======> Enable user picture support and set the default to a square thumbnail option.'), 'status');
   variable_set('user_pictures', '1');
   variable_set('user_picture_dimensions', '1024x1024');
   variable_set('user_picture_file_size', '800');
   variable_set('user_picture_style', 'thumbnail');
 
   // Allow visitor account creation with administrative approval.
+  drupal_set_message(t('======> Allow visitor account creation with administrative approval.'), 'status');
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
 
 
   // Enable default permissions for system roles.
+  drupal_set_message(t('======> Enable default permissions for system roles.'), 'status');
   $filtered_html_permission = filter_permission_name($filtered_html_format);
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', $filtered_html_permission));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', $filtered_html_permission));
 
   // Create a default role for site administrators, with all available permissions assigned.
+  drupal_set_message(t('======> Create a default role for site administrators, with all available permissions assigned.'), 'status');
   $admin_role = new stdClass();
   $admin_role->name = 'administrator';
   $admin_role->weight = 2;
   user_role_save($admin_role);
   user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
   // Set this as the administrator role.
+  drupal_set_message(t('======> Set this as the administrator role.'), 'status');
   variable_set('user_admin_role', $admin_role->rid);
 
   // Assign user 1 the "administrator" role.
+  drupal_set_message(t('======> Assign user 1 the "administrator" role.'), 'status');
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 
-  // Create a Home link in the main menu.
+
+  drupal_set_message(t('======> Create a Home link in the main menu.'), 'status');
   $item = array(
     'link_title' => st('Home'),
     'link_path' => '<front>',
@@ -238,9 +257,11 @@ function druparcheky_install() {
   menu_link_save($item);
 
   // Update the menu router information.
+  drupal_set_message(t('======> Update the menu router information.'), 'status');
   menu_rebuild();
 
   // Enable the admin theme.
+  drupal_set_message(t('======> Setting Admin Theme'), 'status');
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
@@ -249,30 +270,45 @@ function druparcheky_install() {
   variable_set('admin_theme', 'adminimal');
   variable_set('node_admin_theme', '1');
 
-  // Set file variables
-  variable_set('file_default_scheme', 'public');
-  variable_set('file_public_path', 'sites/default/files');
-  variable_set('file_temporary_path', '/tmp');
-
   // Set pathauto & transliterate variables
+  drupal_set_message(t('======> Setting pathauto & transliterate variables'), 'status');
   variable_set('pathauto_node_pattern', '[node:title]');
   variable_set('pathauto_user_pattern', '[user:name]');
   variable_set('pathauto_transliterate', '1');
   variable_set('pathauto_reduce_ascii', '1');
 
-
   // Set date variables
+  drupal_set_message(t('======> Setting date variables with spanish format'), 'status');
   variable_set('date_format_short', 'd/m/Y - H:i');
   variable_set('date_format_medium', 'D, d/m/Y - H:i');
   variable_set('date_format_long', 'l, j F, Y - H:i');
   variable_set('date_first_day', '1');
   variable_set('configurable_timezones', '0');
 
+  // Set public filesystem variables
+  drupal_set_message(t('======> Setting public filesystem folder as sites/default/files'), 'status');
+  variable_set('file_default_scheme', 'public');
+  variable_set('file_public_path', 'sites/default/files');
 
-// save private directory
-$randomvar = rand(100000, 999999);
-$form_state = array();
-$form_state['values']['file_private_path'] = '../private_php/private_'.$randomvar;
-drupal_form_submit('system_file_system_settings', $form_state);
+  // Set temp filesystem variables
+  drupal_set_message(t('======> Setting temp filesystem folder as /tmp'), 'status');
+  variable_set('file_temporary_path', '/tmp');
+
+  // Set private filesystem variables
+  $timestamp_file = time();
+  drupal_set_message(t('======> Setting private filesystem folder as ../private_php/private_'.$timestamp_file), 'status');
+  $form_state = array();
+  $form_state['values']['file_private_path'] = '../private_php/private_'.$timestamp_file;
+  drupal_form_submit('system_file_system_settings', $form_state);
+
+
+
+  drupal_set_message(t('======>'), 'status');
+  drupal_set_message(t('======>'), 'status');
+  drupal_set_message(t('======>'), 'status');
+  drupal_set_message(t('======> ENDING DRUPARCHEKY HACKS!!!'), 'status');
+  drupal_set_message(t('======>'), 'status');
+  drupal_set_message(t('###########################################################################'), 'status');
+
 }
 
