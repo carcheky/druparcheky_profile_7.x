@@ -248,19 +248,31 @@ function druparcheky_install() {
     ->execute();
   variable_set('admin_theme', 'adminimal');
   variable_set('node_admin_theme', '1');
+
+  // Set file variables
   variable_set('file_default_scheme', 'public');
-  //variable_set('file_private_path', 'private');
   variable_set('file_public_path', 'sites/default/files');
   variable_set('file_temporary_path', '/tmp');
+
+  // Set pathauto & transliterate variables
   variable_set('pathauto_node_pattern', '[node:title]');
   variable_set('pathauto_user_pattern', '[user:name]');
   variable_set('pathauto_transliterate', '1');
   variable_set('pathauto_reduce_ascii', '1');
-  // variable_set('devel_page_alter', '1');
+
+
+  // Set date variables
+  variable_set('date_format_short', 'd/m/Y - H:i');
+  variable_set('date_format_medium', 'D, d/m/Y - H:i');
+  variable_set('date_format_long', 'l, j F, Y - H:i');
+  variable_set('date_first_day', '1');
+  variable_set('configurable_timezones', '0');
+
 
 // save private directory
+$randomvar = rand(100000, 999999);
 $form_state = array();
-$form_state['values']['file_private_path'] = '../private_php/druparcheky';
+$form_state['values']['file_private_path'] = '../private_php/private_'.$randomvar;
 drupal_form_submit('system_file_system_settings', $form_state);
 }
 
