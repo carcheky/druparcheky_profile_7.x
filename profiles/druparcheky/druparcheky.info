@@ -52,6 +52,7 @@ dependencies[] = transliteration
 dependencies[] = taxonomy
 ; User
 dependencies[] = logintoboggan
+dependencies[] = spambot
 ; User interface
 dependencies[] = ckeditor
 ; Views
