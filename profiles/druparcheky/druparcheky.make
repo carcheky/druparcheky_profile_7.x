@@ -46,6 +46,7 @@ projects[] = "total_control"
 projects[] = "cs_adaptive_image"
 projects[] = "ais"
 projects[] = "adaptive_image"
+projects[] = "spambot"
 
 ; +++++ Themes +++++
 
