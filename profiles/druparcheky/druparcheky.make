@@ -6,6 +6,12 @@ api = "2"
 
 projects[] = "drupal"
 
+
+; +++++ Languages +++++
+
+translations[] = "es"
+
+
 ; +++++ Modules +++++
 
 projects[] = "admin_menu"
@@ -59,7 +65,7 @@ projects[] = "adminimal_theme"
 ; +++++ Libraries +++++
 
 ; CKEditor
-libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.7.3/ckeditor_4.7.3_full.zip"
-libraries[ckeditor][directory_name] = "ckeditor"
-libraries[ckeditor][type] = "library"
+; libraries[ckeditor][download][type] = "get"
+; libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.7.3/ckeditor_4.7.3_full.zip"
+; libraries[ckeditor][directory_name] = "ckeditor"
+; libraries[ckeditor][type] = "library"
