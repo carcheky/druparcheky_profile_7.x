@@ -1,14 +1,15 @@
-# Página web #
-http://carcheky.github.io/druparcheky/
 
-# OBJETIVO #
+# Página web
+
+`http://carcheky.github.io/druparcheky/`
+
+# OBJETIVO
 
 Este perfil está desarrollado pensando en la optimización del tiempo a la hora de emprender un nuevo proyecto en druparcheky.
 
+## CONTENIDO DEL PERFIL
 
-##CONTENIDO DEL PERFIL
-https://raw.githubusercontent.com/carcheky/druparcheky/master/profiles/druparcheky/druparcheky.make
-
+`https://raw.githubusercontent.com/carcheky/druparcheky/master/profiles/druparcheky/druparcheky.make`
 
 ### CÓMO INSTALAR
 
@@ -18,8 +19,7 @@ https://raw.githubusercontent.com/carcheky/druparcheky/master/profiles/druparche
 * Proceder con la instalación
 * Borrar el archivo download-druparcheky.sh
 
-
-### POST INSTALACIÓN ###
+### POST INSTALACIÓN
 
 * Ir a /admin/config/media/file-system y guardar cambios, quizás sea necesario corregir permisos para poder guardar.
  asdf
