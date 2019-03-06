@@ -6,12 +6,6 @@ api = "2"
 
 projects[] = "drupal"
 
-
-; +++++ Languages +++++
-
-translations[] = "es"
-
-
 ; +++++ Modules +++++
 
 projects[] = "admin_menu"
